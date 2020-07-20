@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sophie's testing website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+      <a name="top"></a>
+        <header>
+              <a class="logo" href = "index.html">
+                  <img src="img\newLogo.png" alt="logo" >
+              </a>
+              <div class="nav">
+                <a href="index.html" class="nav__link">病毒的逆襲(新冠狀肺炎小百科)</a>
+                <a href="how-to-disinfect.html" class="nav__link active">如何防疫</a>
+              </div>
+        </header>
+    <body>
+
+      <!-- SideBar -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href = "#top" id = "Totop">回到上面</a>
+        <a href="#intro" id = "Tointro">簡介</a>
+        <a href="#vid" id = "Todiffusion">防疫小撇步</a>
+    </div>
+
+
+      <h1 class = "title__main title__main-how" id = "home">如何防疫</h1>
+
+      <section id = "intro">
+        <p class = "info--how">以下這部影片將介紹如何有效防疫,請大家盡情觀賞!</p>
+      </section>
+
+      <section id = "vid">
+        <video src="img\vid.mp4" controls autoplay width = "800px">
+          防疫小撇步
+        </video>
+      </section>
+
+    <footer class = "footer">
+      <h4 class = "footer__developers">聯絡我們:</h4>
+          <div>
+            <a href="mailto:sophieanhsu@gmail.com" class="footer__link footer__link-1">sophieanhsu@gmail.com</a>
+          </div>
+          <div >
+            <a href="mailto:debby20050618@gmail.com" class="footer__link footer__link-2">debby20050618@gmail.com</a>
+          </div>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                  <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://dribbble.com">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://twitter.com">
+                  <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com">
+                  <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+      </footer>
+
+      <script src = "js/index.js"></script>
+    </body>
+</html>

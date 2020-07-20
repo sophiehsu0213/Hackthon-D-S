@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sophie's testing website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+      <a name="top"></a>
+        <header>
+              <a class="logo" href = "index.html">
+                  <img src="img\newLogo.png" alt="logo" >
+              </a>
+              <div class="nav">
+                <a href="#home" class="nav__link active">病毒的逆襲(新冠肺炎小百科)</a>
+                <a href="how-to-disinfect.html" class="nav__link">如何防疫</a>
+              </div>
+        </header>
+    <body>
+
+      <!-- SideBar -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href = "#top" id = "Totop">回到上面</a>
+        <a href="#start" id = "Tostart">疫情的開始</a>
+        <a href="#diffusion" id = "Todiffusion">病毒的擴散</a>
+        <a href="#spread" id = "Tospread">病毒蔓延全世界</a>
+        <a href="#effect" id = "Toeffect">病毒的影響</a>
+    </div>
+
+
+      <h1 class = "title__main title__main-about" id = "home">病毒的逆襲</h1>
+
+      <!-- Sections -->
+      <section class = "start" id = "start">
+        <h3 class = "section__subtitle section__subtitle--start">疫情的開始</h3>
+        <p class = "info--start">嚴重特殊傳染性肺炎疫情，是一次由嚴重急性呼吸系統症候群冠狀病毒2型（SARS-CoV-2）所引發的全球大流行疫情。疫情最初在2019年12月於中華人民共和國湖北省武漢市華南海鮮市場被發現，
+          隨後在2020年初迅速擴散至全球多國，逐漸變成一場全球性大瘟疫</p>
+      </section>
+
+      <section class = "diffusion" id = "diffusion">
+        <h3 class = "section__subtitle section__subtitle--diffusion">病毒的擴散</h3>
+        <p class = "info--diffusion">已知最早的有症狀者，於2019年12月1日出現。截至2020年7月17日，全球已有220多個國家和地區累計報告逾1300萬名確診個案，逾57萬名患者死亡。</p>
+        <img src="img\virus-spread-map.png" alt="virus spread map" class="diffusion__img">
+      </section>
+
+      <section class = "spread" id = "spread">
+        <h3 class = "section__subtitle section__subtitle--spread">病毒蔓延全世界</h3>
+        <p class = "info--spread">因為新冠肺炎傳播速度快以及傳染管道多(飛沫、直接/間接接觸...),使傳染機會增加,感染人數飆漲。
+        潛伏期為1~14天</p>
+      </section>
+
+      <section class = "effect" id = "effect">
+        <h3 class = "section__subtitle section__subtitle--effect">病毒的影響</h3>
+        <ul class = "info--effect">
+          <li>疫情是對全球經濟的重大破壞穩定的威脅
+            <ol>
+              <li>供應短缺</li>
+              <li>石油和其他能源市場</li>
+            </ol>
+          </li>
+          <li>藝術表演被取消推遲</li>
+          <li>政治活動受影響</li>
+          <li>教育系統受到波及，目前使用遙距教育計畫以及開放教育資源應用程式和平台，學生和教師可利用網路進行遠端連線教學</li>
+          <li>由於大量工廠暫停作業,以及計畫旅行大幅減少，使許多地區的空氣污染大幅下降</li>
+        </ul>
+      </section>
+
+      <footer class = "footer">
+        <h4 class = "footer__developers">聯絡我們:</h4>
+            <div>
+              <a href="mailto:sophieanhsu@gmail.com" class="footer__link footer__link-1">sophieanhsu@gmail.com</a>
+            </div>
+            <div >
+              <a href="mailto:debby20050618@gmail.com" class="footer__link footer__link-2">debby20050618@gmail.com</a>
+            </div>
+
+            <ul class="social-list">
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://codepen.io">
+                      <i class="fab fa-codepen"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="http://dribbble.com">
+                      <i class="fab fa-dribbble"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://twitter.com">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://github.com">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </li>
+            </ul>
+        </footer>
+
+        <script src = "js/index.js"></script>
+    </body>
+</html>
