@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #ffffff;
+    --clr-dark: #1d360e;
+    --clr-accent: #76ffc6;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong { font-weight: var(--fw-bold) }
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__subtitle {
+    margin: 0;
+
+}
+
+/* header */
+
+.logo {
+  width: 63px;
+  float: left;
+}
+
+/* Add a black background color to the top navigation */
+.nav {
+  background-color: var(--clr-dark);
+  overflow: hidden;
+  display: flex;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a:focus{
+  position: relative;
+  z-index: 2;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+}
+
+/* Sidebar */
+
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding-top: 15px; /* 15px padding */
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0;  Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Totop {
+  top: 120px;
+  background-color: #4CAF50;
+  padding-bottom: 15px;
+}
+
+#Tostart {
+  top: 225px;
+  background-color: #2196F3; /* Blue */
+  padding-bottom: 15px;
+}
+
+#Tointro{
+  top: 225px;
+  background-color: #2196F3; /* Blue */
+  padding-bottom: 50px;
+}
+
+#Todiffusion {
+  top: 330px;
+  background-color: #f44336; /* Red */
+  padding-bottom: 15px;
+}
+
+#Tospread {
+  top: 430px;
+  background-color: #ffca18; /* Light Black */
+  padding-bottom: 15px;
+}
+
+#Toeffect {
+  top: 565px;
+  background-color: #555;
+  padding-bottom: 15px;
+}
+
+/* Title */
+
+.title__main {
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  display: block;
+  background-color: #d6d6d6;
+  background-size: cover;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.title__main-about {
+background-image: url(../img/COVID-19BG.jpg);
+}
+
+.title__main-how {
+  background-image: url(../img/doctorBG.jpg);
+  background-size: cover;
+  background-color: #8a8a8a;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+}
+/* Typographic */
+
+.section__subtitle {
+  font-weight: var(--fw-bold)
+}
+
+section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Start of Virus */
+
+.start {
+  background-color: #ddfffe;
+}
+/* Diffusion of Virus */
+
+.diffusion {
+  background-image: url(../img/shapeBG.jpg);
+  background-size: cover;
+  background-color: #d6d6d6;
+  color: var(--clr-dark);
+  margin: 0 auto;
+}
+
+.diffusion__img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+    .diffusion {
+        display: grid;
+        grid-template-columns: 1fr 500px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+
+    .section__subtitle--diffusion {
+        grid-area: title;
+    }
+
+    .section__info--diffusion {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+
+    .diffusion__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/* Spread Of Virus*/
+
+.spread {
+  background-color: #fff8de;
+}
+
+/* Effect */
+
+.effect {
+  background-image: url(../img/geometricBG.jpg);
+  background-size: cover;
+  background-color: #8a8a8a;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+}
+
+
+/* Footer */
+
+.footer {
+  background: var(--clr-dark);
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+}
+
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link{
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content:center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 .5em 0;
+}
+
+.social-list__link{
+  padding: .5em;
+}
